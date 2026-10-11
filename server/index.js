@@ -102,6 +102,9 @@ app.post("/api/chat", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("Nova AI Backend is running successfully! 🚀");
+});
 
 app.listen(port, "0.0.0.0", () => {
   console.log(`Nova AI API running on port ${port}`);
